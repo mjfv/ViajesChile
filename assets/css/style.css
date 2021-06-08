@@ -1,0 +1,43 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    }
+
+.divider {
+   background-color: #00ddff;
+   height: 0.3em !important;
+   width: 95%;
+}
+
+/*Navbar*/  
+.navbar-nav {
+   /* text-align: center;*/
+    background-color: rgba(253, 253, 253, 0.178);
+    font-size: 1rem;
+}
+  
+.bg-dark {
+    background-color: rgb(72, 193, 249)!important;
+}
+  
+.nav-item:hover {
+    background-color: rgba(88, 88, 88, 0.226);
+}
+  
+.banner-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+/*Titulos*/
+
+.title {
+    font-size: 2rem;
+    color:white
+}
+
+  
+
+  
