@@ -15,26 +15,33 @@ $(document).ready(function(){
     });
 
 	//Transparent and color navbar
-	var nav = document.querySelector('nav');
+	
       window.addEventListener('scroll', function () {
-        if (window.pageYOffset > 100) { 
-          $('nav').addClass('bg-dark', 'shadow');
+        if (window.pageYOffset > 100) {  //scroll
+          $('nav').addClass('bg-dark');
         } else { 
-          $('nav').removeClass('bg-dark', 'shadow');
+          $('nav').removeClass('bg-dark');
         }
       }); 
 
 	//Navbar active -- Bootstrap
 	var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 		target: '#navbarNav'
-	  })
+	});
 
 	//Tooltip -- Bootstrap
 	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   		return new bootstrap.Tooltip(tooltipTriggerEl)
-	})
+	});
 
+	//Carousel -- Bootstrap
+	var myCarousel = document.querySelector('#myCarousel');
+	var carousel = new bootstrap.Carousel(myCarousel, {
+		interval: 2000,
+		wrap: true,
+		pause: 'hover'
+	});
 	
 
 
