@@ -1,13 +1,3 @@
-var nav = document.querySelector('nav');
-
-      window.addEventListener('scroll', function () {
-        if (window.pageYOffset > 100) { //Añadimos clases con jquery
-          $('nav').addClass('bg-dark', 'shadow');
-        } else { 
-          $('nav').removeClass('bg-dark', 'shadow');
-        }
-      }); 
-
 $(document).ready(function(){
 
     // Add smooth scrolling to all links
@@ -19,9 +9,27 @@ $(document).ready(function(){
               	$('html, body').animate({
                 	scrollTop: $(hash).offset().top
                 }, 800, function(){ // milliseconds it takes to scroll to the specified area
-                	// Add hash (#) to URL when done scrolling (default click behavior)
                 	window.location.hash = hash;
               	});
         }
     });
+
+	//Transparent and color navbar
+	var nav = document.querySelector('nav');
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) { 
+          $('nav').addClass('bg-dark', 'shadow');
+        } else { 
+          $('nav').removeClass('bg-dark', 'shadow');
+        }
+      }); 
+
+	//Navbar active -- Bootstrap
+	var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+		target: '#navbarNav'
+	  })
+
+	
+
+
 });
