@@ -10,18 +10,13 @@
     <meta name="description" content="ViajesChile">
     <meta name="keywords" content="ViajesChile">
 
-    <link rel="shortcut icon" type="image/jpg" href="#">
-
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/viajes.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-   
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -30,9 +25,9 @@
             <div class="container">
                 <!-- Logo  -->
                 <a class="navbar-brand" href="index.html"> 
-                    <img src="assets/img/viajes.svg" width="5%" height="5%" alt="logo">Viajes Chile
+                    <img src="assets/img/viajes.svg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">Viajes Chile
                 </a>
-                <!-- Botones  -->
+                <!-- Boton  -->
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -49,21 +44,22 @@
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav text-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link active" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes somos</a>
+                            <a class="nav-link" href="#about">Quienes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Destacados</a>
+                            <a class="nav-link" href="#ads">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contact">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <!--Carousel-->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -93,26 +89,96 @@
         </div>
     </header>
 
-    <p class="title text-center">¿Quiénes somos?</p>
-    <hr class="divider mx-auto">
+    <div id="about">
+        <div class="pt-5"></div>
+        <p class="title text-center fs-4">¿Quiénes somos?</p>
+        <div class="divider mx-auto py-3 border-top border-3"></div>
+    </div>
 
-    <p class="title text-center">Destacados</p>
-    <hr class="divider mx-auto">
+    <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+              <div class="bg-col py-1 text-center"><i class="fas fa-plane fa-2x"></i></div>
+              <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae dignissimos veniam rem magni excepturi quae ex fugiat, facere totam cupiditate eveniet minima sequi fuga est sapiente, vero itaque cumque suscipit.</p>
+            </div>
+            <div class="col">
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus veritatis, molestiae magnam rerum corrupti. Cumque eveniet illum id repellendus qui impedit, quidem nulla sit, praesentium, saepe quaerat sapiente. Autem!</p>
+              <div class="bg-col py-1 text-center"><i class="fas fa-triangle fa-2x"></i></div>
+            </div>
+            <div class="col">
+              <div class="bg-col py-1 text-center"><i class="fas fa-route fa-2x"></i></div>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur deleniti quaerat velit dolorem quod cumque omnis. Omnis perspiciatis fugiat reprehenderit, obcaecati provident odit voluptatum ullam necessitatibus nostrum iure amet nulla.</p>
+            </div>
+        </div>
+    </div>
 
-    <p class="title text-center">Contacto</p>
-    <hr class="divider mx-auto">
+    <div id="ads">
+        <div class="pt-5"></div>
+        <p class="title text-center fs-4">Destacados</p>
+        <div class="divider mx-auto py-3 border-top border-3"></div>
+    </div>
+
+    <!--Cards-->
+    <div class="container">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
+            <div class="col">
+                <div class="card text-white h-100 border border-white border-2">
+                    <img src="assets/img/card1.jpg" class="card-img-top" alt="río">
+                    <div class="card-body">
+                        <h5 class="card-title fs-5 fw-bolder text-start">Lorem ipsum, dolor sit amet</h5>
+                        <p class="card-text fs-6 fw-lighter text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores nam soluta sunt esse, amet illum facere provident tenetur tempora incidunt, ipsam debitis aspernatur modi dolorum ea nulla ex officia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-info text-white h-100 border border-white border-2" >
+                    <img src="assets/img/card2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title fs-5 fw-bolder text-start">Consectetur adipisicing elit</h5>
+                        <p class="card-text fs-6 fw-lighter text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos saepe quibusdam obcaecati vero sint aliquam nobis molestiae iusto. Odio aut nihil facilis repudiandae, consequatur cupiditate! Quas fuga eos omnis deleniti.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-info text-white h-100 border border-white border-2">
+                    <img src="assets/img/card3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <h5 class="card-title fs-5 fw-bolder text-start">Suscipit, provident facere. Ratione sint </h5>
+                    <p class="card-text fs-6 fw-lighter text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, deserunt vel? Unde esse, repellat nisi non, voluptates ullam asperiores alias optio, earum distinctio blanditiis. Explicabo ad temporibus vero hic incidunt!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-info text-white h-100  border border-white border-2">
+                    <img src="assets/img/card4.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <h5 class="card-title fs-5 fw-bolder text-start">Non sapiente consectetur unde adipisci officia corporis</h5>
+                    <p class="card-text fs-6 fw-lighter text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex exercitationem perspiciatis commodi nemo alias itaque cum quo a pariatur harum minus, at, repellat unde quod eum, voluptatibus repellendus eius iusto?</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="pt-5"></div>
+        <p class="title text-center fs-4">Contacto</p>
+        <div class="divider mx-auto py-3 border-top border-3"></div>
+    </div>
 
     <div class="container typeform ">
         <div class="typeform-widget" data-url="https://form.typeform.com/to/r8yQlDXh?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
     </div>
 
-    <footer>
-
-    </footer>
       
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
